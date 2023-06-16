@@ -8,8 +8,8 @@ module "ecs_cluster" {
   capacity_providers = ["FARGATE", "FARGATE_SPOT"]
   default_capacity_provider_strategy = {
     capacity_provider = "FARGATE_SPOT"
-    weight            = null
-    base              = null
+    weight            = 0
+    base              = 0
   }
   container_insights = "enabled"
   tags = {
